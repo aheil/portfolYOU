@@ -1,7 +1,7 @@
 <div class="card-columns m-3 mt-5">
 
-  <!-- Remote Projects -->
-  {% for remote_lectures in page.remote_lectures %}
+  <!-- Remote Lecture -->
+  {% for remote_lecture in page.remote_lectures %}
 
   {%- for repo in site.github.public_repositories -%}
 
@@ -33,7 +33,7 @@
 
   {% endfor %}
 
-  <!-- Local Projects -->
+  <!-- Local Lectures -->
   {% for lecture in site.lectures %}
 
   {%- assign lecture_type = "local" -%}
