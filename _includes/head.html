@@ -15,9 +15,9 @@
   <meta property="og:title" content="{{ title }}">
   <meta property="og:description" content="{{ description }}">
   {% if post.image %}
-  <meta content="img/{{ post.image }}" property="og:image">
+  <meta property="og:image content=" {{ site.baseurl }}/posts/img/{{ post.image }}" ">
   {% else %}
-  <meta content="/img/aheil_square.png" property="og:image">
+  <meta property=" og:image content="{{ site.baseurl }}/img/aheil_square.png">
   {% endif %}
 
 
