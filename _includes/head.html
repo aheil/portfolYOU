@@ -13,11 +13,11 @@
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="{{ title }}">
-  <meta property="og:description" content="{{ description }}">
+  <meta property="og:description" content="{{ og_description }}">
   {% if post.image %}
-  <meta property="og:image" content="{{ site.url }}/posts/img/{{ post.image }}">
+  <meta property="og:image" content="{{ site.og_url }}/posts/img/{{ post.image }}">
   {% else %}
-  <meta property="og:image" content="{{ site.url }}/aheil_square.jpg">
+  <meta property="og:image" content="{{ site.og_url }}/{{ site.og_image }}">
   {% endif %}
 
 
