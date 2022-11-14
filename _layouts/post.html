@@ -9,9 +9,9 @@ layout: page
   <b>
   {%- assign words = content | number_of_words -%}
   {%- if words < 360 -%}
-    less than 1 min read time
+    weniger als 1 Minute Lesezeit
   {%- else -%}
-    {{ words | divided_by: 180 }} mins read time
+    ca. {{ words | divided_by: 180 }} Lesezeit
   {%- endif -%}
   </b>
 
